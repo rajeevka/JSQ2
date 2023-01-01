@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        ul{
+            list-style-type: none;
+            
+        }
+        ul li{
+            width: 100%;
+            margin: 2px;
+            border: 3px solid rgb(0, 0, 0);
+            border-radius: 5px;
+            padding: 5px;
+            text-align: center;
+
+        }
+        li:nth-child(1){
+            background-color: blue;
+        }
+        li:nth-child(9){
+            background-color: green ;
+        }
+        li:nth-child(17){
+            background-color: palevioletred ;
+        }
+        button{
+            margin-left: 60px;
+            width: 100px;
+            height: 30px;
+            background-color: wheat;
+            color: green;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+   <ul>
+    <li>1st child</li>
+    <li>2nd child</li>
+    <li>3rd child</li>
+    <li>4th child</li>
+    <li>5th child</li>
+    <li>6th child</li>
+    <li>7th child</li>
+    <li>8th child</li>
+    <li>9th child</li>
+    <li>10th child</li>
+    <li>11th child</li>
+    <li>12th child</li>
+    <li>13th child</li>
+    <li>14th child</li>
+    <li>15th child</li>
+    <li>16th child</li>
+    <li>17th child</li>
+    
+   </ul>
+<button onclick="colorChange()" id="color">COLOR</button>
+   
+
+    <script>
+        var color = document.getElementsByTagName("li");
+       
+         function colorChange() { 
+            for(let i=0;i< color.length;i++){
+                if(i%2==1){
+                    color[i].style.backgroundColor ="lime";
+
+                } 
+            }
+         }
+    </script>
+
+
+</body>
+</html>
